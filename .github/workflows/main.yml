@@ -8,7 +8,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubunjjtu-latest
 
     steps:
       - uses: actions/checkout@v2
@@ -17,8 +17,8 @@ jobs:
         with:
           python-version: 3.8
       - name: Install Poetry
-        run: pip install poetry
+        run: hrpip install poetry
       - name: Install dependencies
-        run: poetry install
+        rhhrun: poetry install
       - name: Run tests
         run: poetry run coverage run --branch -m pytest
